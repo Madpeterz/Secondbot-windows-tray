@@ -90,9 +90,11 @@ namespace Secondbot_windows_tray
                     textBox1.Text = output;
                 }
             }
-            if(exited == false)
+
+            if(exited == true)
             {
                 timer1.Enabled = false;
+                textBox1.Text = textBox1.Text + "---- EXIT ----";
             }
         }
 
